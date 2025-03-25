@@ -212,7 +212,7 @@ export function ChatInterface() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: uuidv4(),
-      content: "Hello! I'm Sam from OrderAssist, your personal server today. How may I assist you with your order?",
+      content: "Hello! I'm OrderAssist from FoodBot, your personal server today. How may I assist you with your order?",
       sender: "bot",
       timestamp: new Date(),
     },
@@ -290,3 +290,4 @@ export function ChatInterface() {
     </div>
   );
 }
+
