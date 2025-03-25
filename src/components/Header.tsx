@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { 
   ShoppingBag, 
@@ -44,7 +45,7 @@ export function Header() {
             transition={{ duration: 0.5 }}
             className="text-xl font-bold tracking-tight"
           >
-            OrderAssist
+            FoodBot
           </motion.h1>
         </Link>
         
