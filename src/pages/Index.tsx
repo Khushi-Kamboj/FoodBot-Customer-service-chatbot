@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Link } from "react-router-dom";
@@ -7,7 +6,6 @@ import { FoodCardGrid } from "@/components/FoodCard";
 import { MessageCircle, Search, Award } from "lucide-react";
 import { motion } from "framer-motion";
 
-// Sample food data
 const popularFoods = [
   {
     id: 1,
@@ -65,7 +63,7 @@ const HeroSection = () => (
             <Link to="/chat">
               <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 text-md px-8">
                 <MessageCircle className="mr-2 h-5 w-5" />
-                Chat with FoodBot
+                Chat with OrderAssist
               </Button>
             </Link>
           </div>
@@ -79,7 +77,7 @@ const FeaturesSection = () => (
   <section className="py-16 bg-muted/30">
     <div className="container px-4">
       <h2 className="text-3xl font-bold text-center mb-12">
-        Why Choose <span className="text-primary">FoodBot</span>
+        Why Choose <span className="text-primary">OrderAssist</span>
       </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

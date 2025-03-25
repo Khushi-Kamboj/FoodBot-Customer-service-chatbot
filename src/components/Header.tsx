@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { 
   ShoppingBag, 
@@ -14,54 +13,52 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
-                <MenuIcon className="h-5 w-5" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="w-[300px]">
-              <nav className="grid gap-6 text-lg font-medium mt-10">
-                <Link to="/" className="flex items-center gap-2 hover:text-primary transition-colors">
-                  Home
-                </Link>
-                <Link to="/menu" className="flex items-center gap-2 hover:text-primary transition-colors">
-                  Menu
-                </Link>
-                <Link to="/orders" className="flex items-center gap-2 hover:text-primary transition-colors">
-                  My Orders
-                </Link>
-                <Link to="/chat" className="flex items-center gap-2 hover:text-primary transition-colors">
-                  Help & Support
-                </Link>
-              </nav>
-            </SheetContent>
-          </Sheet>
-          
-          <Link to="/" className="ml-4 md:ml-0">
-            <motion.h1 
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-xl font-bold tracking-tight"
-            >
-              FoodBot
-            </motion.h1>
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button variant="ghost" size="icon" className="md:hidden">
+              <MenuIcon className="h-5 w-5" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="w-[300px]">
+            <nav className="grid gap-6 text-lg font-medium mt-10">
+              <Link to="/" className="flex items-center gap-2 hover:text-primary transition-colors">
+                Home
+              </Link>
+              <Link to="/menu" className="flex items-center gap-2 hover:text-primary transition-colors">
+                Menu
+              </Link>
+              <Link to="/orders" className="flex items-center gap-2 hover:text-primary transition-colors">
+                My Orders
+              </Link>
+              <Link to="/chat" className="flex items-center gap-2 hover:text-primary transition-colors">
+                Help & Support
+              </Link>
+            </nav>
+          </SheetContent>
+        </Sheet>
+        
+        <Link to="/" className="ml-4 md:ml-0">
+          <motion.h1 
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-xl font-bold tracking-tight"
+          >
+            OrderAssist
+          </motion.h1>
+        </Link>
+        
+        <nav className="hidden md:flex items-center space-x-6 ml-10">
+          <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
+            Home
           </Link>
-          
-          <nav className="hidden md:flex items-center space-x-6 ml-10">
-            <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
-              Home
-            </Link>
-            <Link to="/menu" className="text-sm font-medium hover:text-primary transition-colors">
-              Menu
-            </Link>
-            <Link to="/orders" className="text-sm font-medium hover:text-primary transition-colors">
-              My Orders
-            </Link>
-          </nav>
-        </div>
+          <Link to="/menu" className="text-sm font-medium hover:text-primary transition-colors">
+            Menu
+          </Link>
+          <Link to="/orders" className="text-sm font-medium hover:text-primary transition-colors">
+            My Orders
+          </Link>
+        </nav>
         
         <div className="flex items-center space-x-2">
           <Link to="/chat">
